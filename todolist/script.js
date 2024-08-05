@@ -13,7 +13,7 @@ inputBox.onkeyup = ()=>{
     addBtn.classList.remove("active"); //unactive the add button
   }
 }
-// i an calling a function
+
 showTasks(); //calling showTask function
 
 addBtn.onclick = ()=>{ //when user click on plus icon button
@@ -29,6 +29,10 @@ addBtn.onclick = ()=>{ //when user click on plus icon button
   showTasks(); //calling showTask function
   addBtn.classList.remove("active"); //unactive the add button once the task added
 }
+
+
+showTasks()
+
 
 function showTasks(){
   let getLocalStorageData = localStorage.getItem("New Todo");
@@ -51,6 +55,8 @@ function showTasks(){
   todoList.innerHTML = newLiTag; //adding new li tag inside ul tag
   inputBox.value = ""; //once task added leave the input field blank
 }
+
+showTasks()
 
 // delete task function
 function deleteTask(index){
@@ -80,4 +86,10 @@ addBtn.onclick = ()=>{ //when user click on plus icon button
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //transforming js object into a json string
   showTasks(); //calling showTask function
   addBtn.classList.remove("active"); //unactive the add button once the task added
+}
+
+deleteAllBtn.onclick = ()=>{
+  listArray = []; //empty the array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+  showTasks(); //call the showTasks function
 }
