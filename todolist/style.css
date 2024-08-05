@@ -82,6 +82,10 @@ body{
   max-height: 250px;
   overflow-y: auto;
 }
+.wrapper .todoList{
+  max-height: 250px;
+  overflow-y: auto;
+}
 .todoList li{
   position: relative;
   list-style: none;
