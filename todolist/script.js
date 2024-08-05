@@ -15,6 +15,12 @@ inputBox.onkeyup = ()=>{
 }
 
 showTasks(); //calling showTask function
+showTasks(); //calling showTask function
+showTasks(); //calling showTask function
+showTasks(); //calling showTask function
+showTasks(); //calling showTask function
+showTasks(); //calling showTask function
+showTasks(); //calling showTask function
 
 addBtn.onclick = ()=>{ //when user click on plus icon button
   let userEnteredValue = inputBox.value; //getting input field value
