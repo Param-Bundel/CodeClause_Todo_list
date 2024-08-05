@@ -103,3 +103,7 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
+
+
+
+// this is a code for test branch
