@@ -73,6 +73,11 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
   showTasks(); //call the showTasks function
 }
+deleteAllBtn.onclick = ()=>{
+  listArray = []; //empty the array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+  showTasks(); //call the showTasks function
+}
 
 addBtn.onclick = ()=>{ //when user click on plus icon button
   let userEnteredValue = inputBox.value; //getting input field value
@@ -88,6 +93,11 @@ addBtn.onclick = ()=>{ //when user click on plus icon button
   addBtn.classList.remove("active"); //unactive the add button once the task added
 }
 
+deleteAllBtn.onclick = ()=>{
+  listArray = []; //empty the array
+  localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
+  showTasks(); //call the showTasks function
+}
 deleteAllBtn.onclick = ()=>{
   listArray = []; //empty the array
   localStorage.setItem("New Todo", JSON.stringify(listArray)); //set the item in localstorage
